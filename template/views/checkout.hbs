@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Cart</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel='icon' href='images/Restro.png'>
+    <link rel="stylesheet" href="css/style7.css" />
+  </head>
+  <body>
+    <section class="products">
+      <h1 class="b1">Your Order</h1>
+      <div class="box-container">
+        <!-- Your product listing goes here -->
+        <form action="" method="POST" class="box">
+          {{! <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>"> }}
+          {{! <img class="image" src="" alt=""> }}
+          <div class="flex">
+            <span id="itemList"> </span>
+          </div>
+          <div class="flex">
+            <span class="price">/-</span>
+          </div>
+          <div class="flex">
+            <span>Quantity: </span>
+            <input
+              type="number"
+              name="qty"
+              class="qty"
+              max="99"
+              min="1"
+              maxlength="2"
+            />
+            <button
+              type="submit"
+              name="update_qty"
+              class="fas fa-edit"
+            ></button>
+          </div>
+          {{! <div class="flex">
+               <span>SUB TOTAL :</span> <?= $sub_total = ($fetch_cart['quantity'] * $fetch_product['itemcost']); ?>/-
+            </div> }}
+          <div class="flex">
+            <input
+              type="submit"
+              value="Remove from cart"
+              class="btn"
+              name="remove_item"
+              class="delete-btn"
+              onclick="return confirm('delete this from cart?');"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="bottommain">
+      <form action="" class="count-container" method="POST">
+        <div class="deletebox">
+          <p><b> GRAND TOTAL: <span>/-</span></b></p>
+        </div>
+        <div class="deletebox">
+          <input
+            type="submit"
+            value="Delete All"
+            class="btn"
+            name="delete_all"
+            onclick="return confirm('delete all from cart?');"
+          />
+        </div>
+      </form>
+      <section class="bottom">
+        <div>
+          <input
+            type="submit"
+            value="Add more"
+            class="btn"
+            name="continue_shopping"
+            onclick="myFunction()"
+          />
+        </div>
+
+        <div>
+          <input
+            type="submit"
+            value="Checkout"
+            class="btn"
+            name="checkout"
+            onclick="myFunction2()"
+          />
+        </div>
+        <!-- <input type="submit" onClick="myFunction()"/> -->
+        <script>
+          function myFunction() { window.location.href="/cart"; } function
+          myFunction2() { window.location.href="/payment"; }
+        </script>
+      </section>
+    </div>
+    <script type="javascipt" src="css/script2.js"></script>
+    <script type="javascipt" src="css/script5.js"></script>
+    {{!-- <script>
+      document.addEventListener("DOMContentLoaded", function() {  // Run the displayProducts function
+         displayProducts();
+          });
+    </script> --}}
+  </body>
+</html>

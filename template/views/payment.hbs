@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>payment</title>
+  {{!-- <link rel="icon" href="images/favicon.png"> --}}
+  <link rel="stylesheet" href="css/style4.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;display=swap" rel="stylesheet">
+  <link rel='icon' href='images/Restro.png'>
+</head>
+<body>
+  <header id="header">
+    <div id="navig"><img class="head" id="logo" >
+      <ul class="nav"><span class="nav-item"><a class="nav-link active" onclick="nav" href="/login">logout</a></ul>
+    </div>
+  <main class="pay_body">
+    <h2 class="ava_t">Select Payment Method</h2>
+    <section class="payment"> 
+      <form action="payment" method="POST">
+         <script>
+        </script>
+        <script
+          src="//checkout.stripe.com/v2/checkout.js"
+          class="stripe-button"
+          data-key="pk_test_51O9qYUL4Nbp759n2FT3siSxhf7CqALjEQLOsCURHh1VFTXw40okwK2faVCc5ZIghroG9j9Szf3181GPauMToi5SB00Oy8mobFZ"
+          data-amount="240000"
+          data-currency="dollar"
+          data-name="Udit Rao"
+          data-description="Placing the order"
+          data-Locale="auto">
+        </script>
+      </form>
+    </section>
+  </main>
+  <script  src="app.js"></script>
+{{!-- <script type="module" src="script2.js"></script> --}}
+
+</body>
+

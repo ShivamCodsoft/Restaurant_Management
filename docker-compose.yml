@@ -1,0 +1,16 @@
+version: '3'
+services:
+  restaurant:
+    build:
+      dockerfile: dockerfile
+    ports:
+      - "3001:3000"
+
+  restaurant1:
+    build:
+      dockerfile: dockerfile
+    ports:
+      - "3002:3000"
+
+volumes:
+  slack_db:

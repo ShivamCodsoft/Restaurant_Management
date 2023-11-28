@@ -1,0 +1,103 @@
+body {
+  font-family: "Arima Madurai", cursive;
+  scroll-behavior: smooth;
+}
+
+.b1 {
+  color: white;
+  font-weight: 700;
+  text-shadow: 3px 2px 5px black;
+  text-align: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin: 0 0 0.5em 0;
+  background: linear-gradient(
+    to right,
+    #0099cc 10%,  /* Light Blue */
+    #0077b3 40%,  /* Medium Blue */
+    #0077b3 70%,  /* Medium Blue */
+    #005599 80%   /* Dark Blue */
+);
+
+  padding: 0.2em 0 0.2em 0;
+  border-radius: 10px;
+  /* box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px; */
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: safe;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid black;
+}
+
+.empty {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.flex {
+  width: 20%;
+  padding: 1em 2em 1em 2em;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.bottom {
+  width: 25%;
+  padding: 0.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.count-container {
+  width: 25%;
+  padding: 0.3em;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.bottommain {
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(
+    to right,
+    #0099cc 10%,  /* Light Blue */
+    #0077b3 40%,  /* Medium Blue */
+    #0077b3 70%,  /* Medium Blue */
+    #005599 80%   /* Dark Blue */
+);
+
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  /* box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px; */
+}
+
+.deletebox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn {
+  border-radius:8px;
+  background-color:hsl(140.57deg 54.8% 88.5%);
+  font-size:14px;
+}
+.btn:hover {
+  border-radius:8px;
+  background-color:hsl(140.57deg 54.8% 88.5%);
+  font-size:14px;
+  cursor: pointer;
+}
